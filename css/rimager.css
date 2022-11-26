@@ -1,0 +1,32 @@
+:root {
+    --rimager-bg-color: rgba(0,0,0,1);
+}
+
+body {
+    margin: 0;
+}
+
+.item1 { grid-area: g1; }
+.item2 { grid-area: g2; }
+.item3 { grid-area: g3; }
+.item4 { grid-area: g4; }
+.item5 { grid-area: g5; }
+.item6 { grid-area: g6; }
+.item7 { grid-area: g7; }
+
+#rimager {
+    display: grid;
+    grid-template-areas:
+    'g1 g1 g4 g5 g5 g5'
+    'g1 g1 g3 g3 g6 g6'
+    'g2 g2 g2 g7 g6 g6';
+    width: 100%;
+    height: 100vh;
+    background-color: var(--rimager-bg-color);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: .2em;
+}
+/* 
+#rimager .item4 {
+    width: 20vw;
+} */

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RImager</title>
+        <link rel="stylesheet" href="css/rimager.css">
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.transit.min.js"></script>
+        <script src="js/rimager.js"></script>
+    </head>
+    <body>
+        <div id="rimager">
+            <div class="item1"></div>
+            <div class="item2"></div>
+            <div class="item3"></div>  
+            <div class="item4"></div>
+            <div class="item5"></div>
+            <div class="item6"></div>
+            <div class="item7"></div>
+        </div>
+        <script>
+            files = new Array;
+            files[0] = "media/01-jidlo.jpg";
+            files[1] = "media/07-more.jpg";
+            
+            new RImager(".item1",files,8000,1000);
+
+            files = new Array;
+            files[0] = "media/05-more.jpg";
+
+            new RImager(".item2",files,10000,1000);
+
+            files = new Array;
+            files[0] = "media/09-vino.jpg";
+
+            new RImager(".item3",files,10000,1000);
+
+            files = new Array;
+            files[0] = "media/02-jidlo.jpg";
+            files[1] = "media/10-vino.jpg";
+            files[2] = "media/04-jidlo.jpg";
+
+            new RImager(".item4",files,9000,1000);
+
+            files = new Array;
+            files[0] = "media/06-more.jpg";
+
+            new RImager(".item5",files,12000,1000);
+            
+            files = new Array;
+            files[0] = "media/10-vino.jpg";
+            files[1] = "media/08-more.jpg";
+
+            new RImager(".item6",files,10500,1000);
+            
+            files = new Array;
+            files[0] = "media/03-jidlo.jpg";
+            files[1] = "media/11-vino.jpg";
+
+            new RImager(".item7",files,6789,1000);
+        </script>
+    </body>
+</html>
